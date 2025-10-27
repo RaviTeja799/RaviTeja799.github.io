@@ -1,0 +1,65 @@
+Build my portfolio website in simple black white grey pallete minalistic very much engaging attractive and most importantly premium feel website
+My Details
+RAVI TEJA BHAGAVATULA
+AI ML Enthusiast
+Email: bhraviteja799@gmail.com | Phone: +91 7993845825
+LinkedIn: linkedin.com/in/ravi-teja-bhagavatula | GitHub: github.com/RaviTeja799
+ABOUT
+EDUCATION
+Bachelor of Technology - Computer Science Engineering 2023 - 2027
+Gayatri Vidya Parishad College Of Engineering (Autonomous) | Visakhapatnam, India
+Expected Graduation: June 2027
+Intermediate (MPC) - Mathematics, Physics, Chemistry 2021 - 2023
+Ascent Junior College | Visakhapatnam, India
+Board of Intermediate Education, Andhra Pradesh, India
+TECHNICAL SKILLS
+Programming Languages: Java, C, C++, Python, SQL
+Machine Learning: Scikit-Learn, Pandas, NumPy, Matplotlib
+Technologies / Frameworks: HTML, CSS, Javascript, React , KiCAD
+Cloud Platforms: Google Cloud Platform, IBM Cloud, IBM Watson
+Course Work
+• Data Structures and Algorithms • Computer Networks
+• Operating Systems • Object Oriented Programming
+• Database Management Systems
+KEY PROJECTS
+Android GNSS Logger with Collision Detection (SIH)
+● An Android app for ISRO to log raw GNSS/IMU data and prevent vehicle collisions in real-time.
+● Engineered a real-time collision detection system using an Extended Kalman Filter (EKF) for sensor fusion, achieving 5-10m
+position accuracy.
+● Implemented a low-latency (20-50ms) P2P vehicle communication system using UDP Multicast,Bluetooth(BLE) for automatic
+device discovery and data sharing.
+● Designed a multi-level warning system (visual, audio, vibration) to alert users about collision risks based on probabilistic risk
+assessment.
+● Tech Stack: Kotlin (Native Android), Extended Kalman Filter (EKF), UDP Multicast, CSV.
+CivicVoice: Full-Stack Civic Reporting Platform (SIH)
+● A comprehensive web and mobile platform for citizens to report local issues, track status, and engage with government
+workflows.
+● Architected a full-stack solution with a React frontend, Express backend, and Firebase for auth and real-time notifications
+(FCM).
+● Implemented key server-side modules for gamification (points, leaderboards) and report status tracking (SLA, escalations).
+● Tech Stack: React, Node.js, Express, Firebase (Auth, Firestore, FCM), TypeScript, SQLite.
+AI Health Symptom Checker (IBM AI and Cloud Virtual Internship)
+● An intelligent chatbot developed during the Edunet IBM AI & Cloud Internship to analyze symptoms and provide health
+information.
+● Utilized the Mistral 70b large language model to power the core conversational and analytical engine.
+● Deployed the application on IBM Cloud, gaining hands-on experience with cloud-based AI services and model integration.
+● Tech Stack: Python, IBM Cloud, IBM Watson, Mistral 70b, AI/ML.
+AI Garbage & Recyclables Detection (Mini Project)
+● An AI-powered web and mobile application to automatically classify 30 different types of garbage and recyclable materials from
+images.
+● Trained and deployed a lightweight Convolutional Neural Network (CNN) using TensorFlow Lite for efficient on-device
+inference.
+● Separately developed a native Android version of the classifier using Kotlin, demonstrating cross-platform deployment skills.
+● Tech Stack: Python, Streamlit, TensorFlow Lite, CNN, Kotlin (Native Android), Pillow.
+ACHIEVEMENTS & CERTIFICATIONS
+Google Cloud Arcade Cohort 2 (2024): Successfully completed cloud-based challenges, earned skill badges and reached arcade champion tier. Hackathons & Coding Events: Active participant applying AI/ML skills to problem-solving under pressure
+Certifications:
+Artificial Intelligence Fundamentals (IBM), Academy Cloud Foundations (Amazon Web Services (AWS)), Python
+Basics for Data Science (edX) , Academy Machine Learning Foundations (Amazon Web Services (AWS))
+Extras
+School Captain 2020-21
+Google Student Ambassador 2025-2026
+Smart India Hackathon
+Qualified for SIH solution submission from college level competition
+400+ Leetcode Problem solver
+Solved 200+ problems on Leetcode
