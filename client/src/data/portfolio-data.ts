@@ -10,8 +10,8 @@ export const portfolioData: PortfolioData = {
     github: "github.com/RaviTeja799",
     instagram: "instagram.com/bhraviteja",
     twitter: "x.com/iambhraviteja",
-    medium: "medium.com/@raviteja1108_45378",
-    discord: "discordapp.com/users/raviteja799"
+    medium: "medium.com/@iambhraviteja",
+    discord: "discord.com/users/raviteja1108_45378"
   },
   education: [
     {

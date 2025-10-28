@@ -152,7 +152,7 @@ export function About({ about, contact }: AboutProps) {
                 </svg>
                 <div className="min-w-0">
                   <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Discord</p>
-                  <p className="font-medium break-words">raviteja799</p>
+                  <p className="font-medium break-words">raviteja1108_45378</p>
                 </div>
               </a>
             </div>
