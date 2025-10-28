@@ -27,11 +27,40 @@ export interface Project {
   techStack: string[];
 }
 
+export interface ProjectDetail extends Project {
+  images: string[];
+  problemStatement: string;
+  solutionApproach: string;
+  outcomes: string[];
+  demoUrl?: string;
+  githubUrl?: string;
+  featured: boolean;
+}
+
+export interface Badge {
+  id: string;
+  title: string;
+  issuer: string;
+  category: 'cloud' | 'competitive' | 'ai-ml' | 'leadership';
+  imageUrl: string;
+  verificationUrl?: string;
+  issueDate?: string;
+  description: string;
+}
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
 export interface Achievement {
   id: string;
   title: string;
   description: string;
   type: 'certification' | 'hackathon' | 'leadership' | 'competitive';
+  period?: string;
 }
 
 export interface PortfolioData {
