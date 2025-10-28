@@ -71,6 +71,23 @@ function SpaceBackground() {
         return;
       }
 
+      // Don't intercept navigation buttons (back buttons, internal navigation)
+      if (link instanceof HTMLButtonElement) {
+        // Only intercept buttons that are links to external resources
+        // Skip buttons with onClick handlers for internal navigation
+        return;
+      }
+
+      // Only intercept external links (target="_blank" or external URLs)
+      if (link instanceof HTMLAnchorElement) {
+        const isExternal = link.target === "_blank" || 
+                          link.href.startsWith("http") && 
+                          !link.href.includes(window.location.hostname);
+        if (!isExternal) {
+          return; // Let internal links work normally
+        }
+      }
+
       e.preventDefault();
       e.stopPropagation();
 
