@@ -4,3 +4,31 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+
+# Kiro IDE files
+.kiro/
+.local/
+
+# Environment files
+.env
+.env.local
+.env.example
+
+# Documentation files (keep only essential ones)
+DEPLOYMENT_QUICKSTART.md
+DEPLOYMENT_SUCCESS.md
+EMAILJS_SETUP.md
+
+# Replit files
+.replit
+replit.nix
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+Thumbs.db
