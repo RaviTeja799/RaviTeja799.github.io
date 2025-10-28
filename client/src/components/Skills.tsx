@@ -2,6 +2,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Skill } from '@shared/schema';
 import { Code, Brain, Wrench, Cloud } from 'lucide-react';
+import { useStarsEnabled } from '@/hooks/useStarsEnabled';
 
 interface SkillsProps {
   skills: Skill[];
@@ -16,8 +17,10 @@ const categoryIcons: Record<string, React.ReactNode> = {
 };
 
 export function Skills({ skills, coursework }: SkillsProps) {
+  const starsEnabled = useStarsEnabled();
+  
   return (
-    <section id="skills" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-background">
+    <section id="skills" className={`py-16 sm:py-20 md:py-24 lg:py-32 ${!starsEnabled ? 'bg-background' : ''}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-12 sm:mb-16 text-foreground" data-testid="text-skills-heading">
           Technical Skills

@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { useLocation } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { StarsToggle } from '@/components/StarsToggle';
 import { DownloadResumeButton } from '@/components/DownloadResumeButton';
 
 export function Navigation() {
@@ -79,10 +80,12 @@ export function Navigation() {
             </button>
           ))}
           <DownloadResumeButton />
+          <StarsToggle />
           <ThemeToggle />
         </div>
 
         <div className="md:hidden flex items-center gap-2">
+          <StarsToggle />
           <ThemeToggle />
           <Button
             size="icon"

@@ -1,14 +1,17 @@
 import { Card } from '@/components/ui/card';
 import { GraduationCap, MapPin, Calendar } from 'lucide-react';
 import { Education as EducationType } from '@shared/schema';
+import { useStarsEnabled } from '@/hooks/useStarsEnabled';
 
 interface EducationProps {
   education: EducationType[];
 }
 
 export function Education({ education }: EducationProps) {
+  const starsEnabled = useStarsEnabled();
+  
   return (
-    <section id="education" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-muted/30">
+    <section id="education" className={`py-16 sm:py-20 md:py-24 lg:py-32 ${!starsEnabled ? 'bg-muted/30' : ''}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-12 sm:mb-16 text-foreground" data-testid="text-education-heading">
           Education

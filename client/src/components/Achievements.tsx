@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Achievement } from '@shared/schema';
 import { Award, Trophy, Crown, Code, ArrowRight } from 'lucide-react';
 import { Link } from 'wouter';
+import { useStarsEnabled } from '@/hooks/useStarsEnabled';
 
 interface AchievementsProps {
   achievements: Achievement[];
@@ -17,6 +18,7 @@ const typeIcons: Record<Achievement['type'], React.ReactNode> = {
 };
 
 export function Achievements({ achievements }: AchievementsProps) {
+  const starsEnabled = useStarsEnabled();
   const featuredAchievements = achievements.filter(
     a => a.id === 'achievement-1' || a.id === 'achievement-2' || a.id === 'achievement-3'
   );
@@ -27,7 +29,7 @@ export function Achievements({ achievements }: AchievementsProps) {
   );
 
   return (
-    <section id="achievements" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-background">
+    <section id="achievements" className={`py-16 sm:py-20 md:py-24 lg:py-32 ${!starsEnabled ? 'bg-background' : ''}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground" data-testid="text-achievements-heading">

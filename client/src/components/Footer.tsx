@@ -1,5 +1,6 @@
 import { Mail, Linkedin, Github } from 'lucide-react';
 import { ContactInfo } from '@shared/schema';
+import { useStarsEnabled } from '@/hooks/useStarsEnabled';
 
 interface FooterProps {
   name: string;
@@ -8,6 +9,7 @@ interface FooterProps {
 }
 
 export function Footer({ name, title, contact }: FooterProps) {
+  const starsEnabled = useStarsEnabled();
   const currentYear = new Date().getFullYear();
 
   const scrollToSection = (id: string) => {
@@ -15,7 +17,7 @@ export function Footer({ name, title, contact }: FooterProps) {
   };
 
   return (
-    <footer className="bg-muted/30 border-t border-border">
+    <footer className={`border-t border-border ${!starsEnabled ? 'bg-muted/30' : ''}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-12">
           <div>

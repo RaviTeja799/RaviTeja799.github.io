@@ -21,7 +21,7 @@ export default function BadgesPage() {
   }));
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="relative min-h-screen" style={{ zIndex: 10 }}>
       <Navigation />
       
       {/* Header */}

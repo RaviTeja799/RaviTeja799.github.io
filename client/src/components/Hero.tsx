@@ -1,6 +1,7 @@
 import { ChevronDown, Mail, Github, Linkedin } from 'lucide-react';
 import { ContactInfo } from '@shared/schema';
 import { DownloadResumeButton } from '@/components/DownloadResumeButton';
+import { useStarsEnabled } from '@/hooks/useStarsEnabled';
 
 interface HeroProps {
   name: string;
@@ -9,12 +10,14 @@ interface HeroProps {
 }
 
 export function Hero({ name, title, contact }: HeroProps) {
+  const starsEnabled = useStarsEnabled();
+  
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-background px-4 sm:px-6">
+    <section className={`relative min-h-screen flex items-center justify-center px-4 sm:px-6 ${!starsEnabled ? 'bg-background' : ''}`}>
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-muted/5 to-transparent" />
         <div className="absolute top-20 left-10 w-48 h-48 sm:w-72 sm:h-72 bg-primary/5 rounded-full blur-3xl" />

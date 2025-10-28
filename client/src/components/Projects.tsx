@@ -3,12 +3,14 @@ import { Badge } from '@/components/ui/badge';
 import { Project } from '@shared/schema';
 import { ExternalLink } from 'lucide-react';
 import { useLocation } from 'wouter';
+import { useStarsEnabled } from '@/hooks/useStarsEnabled';
 
 interface ProjectsProps {
   projects: Project[];
 }
 
 export function Projects({ projects }: ProjectsProps) {
+  const starsEnabled = useStarsEnabled();
   const [, setLocation] = useLocation();
 
   const handleProjectClick = (projectId: string) => {
@@ -16,7 +18,7 @@ export function Projects({ projects }: ProjectsProps) {
   };
 
   return (
-    <section id="projects" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-muted/30">
+    <section id="projects" className={`py-16 sm:py-20 md:py-24 lg:py-32 ${!starsEnabled ? 'bg-muted/30' : ''}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-12 sm:mb-16 text-foreground" data-testid="text-projects-heading">
           Key Projects

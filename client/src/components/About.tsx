@@ -1,6 +1,7 @@
 import { Card } from '@/components/ui/card';
 import { Mail, Linkedin, Github } from 'lucide-react';
 import { ContactInfo } from '@shared/schema';
+import { useStarsEnabled } from '@/hooks/useStarsEnabled';
 
 interface AboutProps {
   about: string;
@@ -8,8 +9,10 @@ interface AboutProps {
 }
 
 export function About({ about, contact }: AboutProps) {
+  const starsEnabled = useStarsEnabled();
+  
   return (
-    <section id="about" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-background">
+    <section id="about" className={`py-16 sm:py-20 md:py-24 lg:py-32 ${!starsEnabled ? 'bg-background' : ''}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-12 sm:mb-16 text-foreground" data-testid="text-about-heading">
           About

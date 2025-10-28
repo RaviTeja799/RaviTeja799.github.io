@@ -1,9 +1,12 @@
 import { ContactForm } from './ContactForm';
 import { Mail } from 'lucide-react';
+import { useStarsEnabled } from '@/hooks/useStarsEnabled';
 
 export function Contact() {
+  const starsEnabled = useStarsEnabled();
+  
   return (
-    <section id="contact" className="py-24 px-6">
+    <section id="contact" className={`py-24 px-6 ${!starsEnabled ? 'bg-background' : ''}`}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">

@@ -14,7 +14,7 @@ export default function ProjectDetail() {
 
   if (!project) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-background">
+      <div className="relative min-h-screen flex items-center justify-center" style={{ zIndex: 10 }}>
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-bold text-foreground">Project Not Found</h1>
           <p className="text-muted-foreground">The project you're looking for doesn't exist.</p>
@@ -28,7 +28,7 @@ export default function ProjectDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="relative min-h-screen" style={{ zIndex: 10 }}>
       {/* Hero Section */}
       <section className="py-12 md:py-16 bg-muted/30 border-b">
         <div className="max-w-6xl mx-auto px-6">
