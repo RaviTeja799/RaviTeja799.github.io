@@ -6,9 +6,12 @@ export const portfolioData: PortfolioData = {
   about: "Passionate computer science student and AI/ML enthusiast with hands-on experience in building intelligent systems, full-stack applications, and innovative solutions. Currently pursuing B.Tech in Computer Science Engineering with a strong foundation in machine learning, mobile development, and cloud technologies. Proven track record in hackathons, with expertise in developing real-world applications that solve complex problems using cutting-edge AI and software engineering practices.",
   contact: {
     email: "bhraviteja799@gmail.com",
-    phone: "+91 7993845825",
     linkedin: "linkedin.com/in/ravi-teja-bhagavatula",
-    github: "github.com/RaviTeja799"
+    github: "github.com/RaviTeja799",
+    instagram: "instagram.com/bhraviteja",
+    twitter: "x.com/iambhraviteja",
+    medium: "medium.com/@raviteja1108_45378",
+    discord: "discordapp.com/users/raviteja799"
   },
   education: [
     {

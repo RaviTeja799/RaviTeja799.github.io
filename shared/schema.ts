@@ -1,8 +1,11 @@
 export interface ContactInfo {
   email: string;
-  phone: string;
   linkedin: string;
   github: string;
+  instagram: string;
+  twitter: string;
+  medium: string;
+  discord: string;
 }
 
 export interface Education {
