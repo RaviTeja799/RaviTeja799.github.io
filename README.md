@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing projects, achievements, and pr
 
 ## 🚀 Live Site
 
-Visit the live portfolio at: [https://RaviTeja799.github.io](https://RaviTeja799.github.io)
+Visit the live portfolio at: [https://ravitejabhagavatula.in](https://ravitejabhagavatula.in)
 
 ## ✨ Features
 

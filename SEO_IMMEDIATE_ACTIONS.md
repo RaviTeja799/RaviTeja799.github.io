@@ -8,9 +8,9 @@
 
 1. Go to: https://search.google.com/search-console
 2. Click "Add Property"
-3. Enter: `https://raviteja799.github.io`
+3. Enter: `https://ravitejabhagavatula.in`
 4. Choose verification method (HTML file is easiest)
-5. Submit sitemap: `https://raviteja799.github.io/sitemap.xml`
+5. Submit sitemap: `https://ravitejabhagavatula.in/sitemap.xml`
 6. Request indexing for homepage
 
 **Why**: Without this, Google won't know your site exists!
@@ -20,7 +20,7 @@
 **Time: 5 minutes**
 
 1. Go to: https://www.bing.com/webmasters
-2. Add site: `https://raviteja799.github.io`
+2. Add site: `https://ravitejabhagavatula.in`
 3. Verify and submit sitemap
 
 ### 3. Update Social Media Profiles
@@ -56,7 +56,7 @@ Create `RaviTeja799/RaviTeja799/README.md` with:
 
 🚀 AI/ML Engineer | Full Stack Developer | Google Student Ambassador 2025-2026
 
-🌐 **Portfolio**: https://raviteja799.github.io
+🌐 **Portfolio**: https://ravitejabhagavatula.in
 
 ## About Me
 
