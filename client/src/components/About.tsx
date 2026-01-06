@@ -25,6 +25,15 @@ export function About({ about, contact }: AboutProps) {
             </p>
             
             <div className="mt-6 sm:mt-8 space-y-3 sm:space-y-4">
+              {/* Place for Image 1 */}
+              <div className="rounded-md overflow-hidden border border-card-border">
+                <img 
+                  src="/images/featured.jpeg" 
+                  alt="Featured Image"
+                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
               <div className="p-4 sm:p-6 bg-card rounded-md border border-card-border">
                 <p className="text-xs sm:text-sm uppercase tracking-wider font-medium text-muted-foreground mb-2">
                   Currently
