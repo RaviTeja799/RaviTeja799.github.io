@@ -1,10 +1,10 @@
-# robots.txt for https://raviteja799.github.io/
+# robots.txt for https://ravitejabhagavatula.in/
 User-agent: *
 Allow: /
 Disallow: /404.html
 
 # Sitemap location
-Sitemap: https://raviteja799.github.io/sitemap.xml
+Sitemap: https://ravitejabhagavatula.in/sitemap.xml
 
 # Crawl-delay (optional, helps with server load)
 Crawl-delay: 1
